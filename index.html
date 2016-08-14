@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>AD Makeover</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html" class="logo"><img src="images/logo_head.gif" alt=""></a>
+		</div>
+
+        <!-- Menu -->
+		<div class="navigation">
+			<ul id="mainTabs">
+				<li class="selected">
+					<a href="index.html" id="menu_home">home</a>
+				</li>
+				<li>
+					<a href="about.html">Chi Siamo</a>
+					<ul>
+						<li>
+							<a href="team.html">La squadra</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="services.html">Servizi</a>
+				</li>
+                <li>
+                    <a href="gallery.html">Galleria</a>
+                </li>
+                <li>
+					<a href="contact.html">Contatti</a>
+				</li>
+                <!--<li class="booking">
+                    <a href="contact.html">Prendi un appuntamento</a>
+                </li>-->
+			</ul>
+		</div>
+        <!-- End Menu -->
+	</div>
+
+    <div id="div_body">
+
+    </div>
+	<div id="footer">
+		<div>
+			<div class="contact">
+				<h3>Contatti</h3>
+				<ul>
+					<li>
+						<b>Indirizzo:</b> <span>Via Ludovico Di Breme n° 61 - 00137- ROMA (RM)</span>
+					</li>
+					<li>
+						<b>Danilo Lucarelli:</b> <span>+39 3427249059</span>
+					</li>
+					<li>
+						<b>Ferracci Adriano:</b> <span>+39 3401429303</span>
+					</li>
+					<li>
+						<b>email:</b> <span>admakeover@outlook.com</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="connect">
+				<h3>Seguici</h3>
+				<p>
+					Presto potrai seguirci su Facebook e Twitter
+				</p>
+				<ul>
+					<li id="facebook">
+						<a href="http://">facebook</a>
+					</li>
+					<li id="twitter">
+						<a href="http://">twitter</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+<!--		<div class="section">
+			<p>
+				&copy; this is the copyright area
+			</p>
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">Chi Siamo</a>
+				</li>
+				<li>
+					<a href="services.html">Servizi</a>
+				</li>
+				<li>
+					<a href="contact.html">Contatti</a>
+				</li>
+				<li>
+					<a href="booking.html">Prendi un appuntamento</a>
+				</li>
+			</ul>
+		</div>-->
+	</div>
+
+    <script>
+
+        $( document ).ready(function (e) {
+            //e.preventDefault();
+            $('#div_body').load('home.html');
+        });
+
+        $('#mainTabs a').click(function(e){
+            //alert(jQuery(this).attr("id"));
+            e.preventDefault();
+            $('#div_body').load(this.getAttribute('href'));
+        });
+
+        $('#div_gallery a').click(function(e){
+            //alert(jQuery(this).attr("id"));
+            e.preventDefault();
+            $('#div_body').load(this.getAttribute('href'));
+        });
+    </script>
+</body>
+</html>

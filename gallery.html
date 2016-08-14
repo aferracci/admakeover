@@ -1,0 +1,117 @@
+	<div id="body">
+		<div class="content">
+			<div class="section">
+				<div class="breadcrumb" id="bred">
+					<span>Sei qui:</span>
+					<ul>
+						<li>
+							<a href="gallery.html">Galleria</a>
+						</li>
+					</ul>
+				</div>
+				<div class="gallery">
+					<h2>Gallery</h2>
+					<ul>
+						<li>
+							<img src="images/jobs/gallery_01.gif" alt="">
+							<!--<h4><a href="">Ingrandisci</a></h4>-->
+							<p>
+                                Controsoffitto con parquette
+							</p>
+						</li>
+						<li>
+							<img src="images/jobs/gallery_02.gif" alt=""><
+							<!--<h4><a href="">Ingrandisci</a></h4>-->
+							<p>
+                                Controsoffitto con scala interna
+							</p>
+						</li>
+						<li>
+							<img src="images/jobs/gallery_03.gif" alt="">
+							<!--<h4><a href="">Ingrandisci</a></h4>-->
+							<p>
+								Termocamino
+							</p>
+						</li>
+						<li>
+							<img src="images/jobs/gallery_04.gif" alt="">
+							<!--<h4><a href="">Ingrandisci</a></h4>-->
+							<p>
+                                Controsoffitto con faretti a incasso
+							</p>
+						</li>
+						<li>
+							<img src="images/jobs/gallery_05.gif" alt="">
+							<!--<h4><a href="">Ingrandisci</a></h4>-->
+							<p>
+								Corridoio con faretti a incasso
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar" id="div_sidebar">
+				<div class="navigation">
+					<h3>Visita anche</h3>
+					<ul>
+						<li>
+							<a href="about.html">L'Azienda</a>
+						</li>
+						<li>
+							<a href="team.html">La Squadra</a>
+						</li>
+                        <li>
+                            <a href="services.html">Servizi</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contatti</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Chi Siamo</a>
+                        </li>
+                        <li class="selected">
+							<a href="gallery.html">Galleria</a>
+						</li>
+					</ul>
+				</div>
+				<div class="post">
+					<h3>ultimi post sui social</h3>
+					<ul>
+						<!--
+						<li>
+							<a href="blog.html" class="figure"><img src="" alt=""></a>
+							<div>
+								<span><a href="blog.html">Post 1</a></span>
+								<p>
+									xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ...
+								</p>
+							</div>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		$('#div_gallery a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+		$('#bred a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+		$('#div_sidebar a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+	</script>

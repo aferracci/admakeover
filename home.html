@@ -1,0 +1,85 @@
+<div id="body">
+    <div class="body">
+        <img src="images/jobs/20160510_contro.gif" alt="">
+        <div id="div_book">
+            <h2>AD Makeover<span>Di Lucarelli Danilo e Ferracci Adriano</span></h2>
+            <p>
+                Progettazione e messa in opera di impianti di allarme e videosorveglianza, impianti domotici,
+                impianti elettrici civili ed industriali, impianti fotovoltaici.<br/>
+                Realizziamo inoltre lavori di ristrutturazione completa: pareti e controssoffitti in cartongesso,
+                posa di pavimenti, impianti idraulici, pittura e decorzione pareti.<br/>
+                Contattaci per un sopralluogo gratuito, saremo lieti di offrire la nostra professionalità per progettare
+                insieme i tuoi spazi.
+                <br/><br/><br/>
+            </p>
+            <a href="contact.html" class="valign:bottom">richiedi un preventivo</a>
+        </div>
+    </div>
+    <div class="header" id="div_boxes">
+        <ul>
+            <li>
+                <a href="services.html" class="figure"><img src="images/credit-card.png" alt=""></a>
+                <div>
+                    <h3><a href="contact.html">Prezzi Vantaggiosi</a></h3>
+                    <p>
+                        Offriamo i migliori prezzi sul mercato pur mantenendo un'altissima qualità dei servizi offerti.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" class="figure"><img src="images/service.png" alt=""></a>
+                <div>
+                    <h3><a href="services.html">Vasta gamma di servizi</a></h3>
+                    <p>
+                        Siamo in grado di offrire una vasta gamma di servizi che coprono tutti gli aspetti della ristrutturazione:
+                        impianti elettrici a norma, impianti d'allarme, impianti idraulici, controssoffitti e lavori in cartongesso,
+                        lavori in muratura.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" class="figure"><img src="images/warranty.png" alt=""></a>
+                <div>
+                    <h3><a href="services.html">Lavoro Garantito</a></h3>
+                    <p>
+                        Tutti i lavori sono eseguiti da professionisti del settore con elevata esperienza sul campo,
+                        ciò ci consente di offrire garanzia specifica su ogni tipo di prestazione.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+
+    $('#div_gallery a').click(function(e){
+        //alert(jQuery(this).attr("id"));
+        e.preventDefault();
+        $('#div_body').load(this.getAttribute('href'));
+    });
+
+    $('#bred a').click(function(e){
+        //alert(jQuery(this).attr("id"));
+        e.preventDefault();
+        $('#div_body').load(this.getAttribute('href'));
+    });
+
+    $('#div_sidebar a').click(function(e){
+        //alert(jQuery(this).attr("id"));
+        e.preventDefault();
+        $('#div_body').load(this.getAttribute('href'));
+    });
+
+    $('#div_book a').click(function(e){
+        //alert(jQuery(this).attr("id"));
+        e.preventDefault();
+        $('#div_body').load(this.getAttribute('href'));
+    });
+
+    $('#div_boxes a').click(function(e){
+        //alert(jQuery(this).attr("id"));
+        e.preventDefault();
+        $('#div_body').load(this.getAttribute('href'));
+    });
+
+</script>

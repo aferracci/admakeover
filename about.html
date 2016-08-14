@@ -1,0 +1,87 @@
+	<div id="body">
+		<div class="content">
+			<div class="section">
+                <div class="breadcrumb" id="bred">
+                    <span>Sei qui:</span>
+                    <ul>
+                        <li>
+                            <a href="about.html">Chi Siamo</a>
+                        </li>
+                    </ul>
+                </div>
+				<div class="company">
+					<h2>La nostra azienda</h2>
+					<div>
+						<img src="images/logo.png" alt="">
+						<h3>AD Makeover<br> di Danilo Lucarelli e Ferracci Adriano</h3>
+						<p>
+							Dopo oltre di quindici anni di esperienza maturati sul campo, Danilo Lucarelli e Ferracci Adriano
+                            decidono nel 2015 di fondare AD Makeover.<br>
+                            La spinta fondamentale nel compiere tale passo nasce dalla convinzione di poter offrire ai propri clienti
+                            servizi di qualità a prezzi vantaggiosi.<br>
+                            AD Makeover è in grado di fornire standard elevati grazie all'accuratezza con la quale il cliente finale viene
+                            accompagnato attraverso tutte le fasi del progetto.
+                            Tutte le lavorazioni vengono eseguite esclusivamente da personale specializzato che in ogni situazione
+                            è in grado di individuare e proporre al cliente le soluzioni migliori.<br>
+                            Il motto di AD Makeover è "soddisfatti a tutti i costi!".
+						</p>
+					</div>
+				</div>
+			</div>
+            <div class="sidebar" id="div_sidebar">
+                <div class="navigation">
+                    <h3>Visita anche</h3>
+                    <ul>
+                        <li>
+                            <a href="about.html">L'Azienda</a>
+                        </li>
+                        <li>
+                            <a href="team.html">La Squadra</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Galleria</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Servizi</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contatti</a>
+                        </li>
+                        <li class="selected">
+                            <a href="about.html">Chi Siamo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery" id="div_gallery">
+                    <h3>In evidenza nella galleria</h3>
+                    <p>
+                        Controsoffitto con faretti a incasso
+                    </p>
+                    <a href="gallery.html" class="figure"><img src="images/jobs/featured/20160510_contro2.gif" alt=""></a> <span><a href="gallery.html">Visita la galleria</a></span>
+
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script>
+
+		$('#div_gallery a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+		$('#bred a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+		$('#div_sidebar a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+	</script>

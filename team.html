@@ -1,0 +1,136 @@
+
+	<div id="body">
+		<div class="content">
+			<div class="section">
+				<div class="breadcrumb" id="bred">
+					<span>Sei qui:</span>
+					<ul>
+						<li>
+							<a href="about.html">Chi Siamo</a>
+						</li>
+						<li>
+							<a href="team.html">La Squadra</a>
+						</li>
+					</ul>
+				</div>
+				<div class="team">
+					<h2>la squadra</h2>
+					<div>
+						<a href="#" class="figure"><img src="" alt=""></a>
+						<h3><a href="#">Lucarelli Danilo</a></h3>
+						<span>Socio Fondatore</span>
+						<p>
+							Danilo Lucarelli nasce come elettricista per poi specializzarsi<br/>
+							in impianti di domotica e di allarme.<br/>
+							Lavora duro con passione ed impeccabile precisione.<br/>
+						</p>
+					</div>
+					<div>
+						<a href="#" class="figure"><img src="" alt=""></a>
+						<h3><a href="#">Ferracci Adriano</a></h3>
+						<span>Socio Fondatore</span>
+						<p>
+							Adriano Ferracci vanta un'esperienza decennale nella progettazione di <br/>
+							Impianti elettrci civili ed industriali. Nel corso degli anni si è specializzato anche<br/>
+							in campo edile dove unisce esperienza e creatività per soddisfare il cliente finale.<br/>
+						</p>
+					</div>
+
+					<!--
+					Sezione per inserire eventuali operai
+					<ul>
+						<li>
+							<a href="#" class="figure"><img src="images/robert.jpg" alt=""></a>
+							<h3><a href="#">Robert B. Nance</a></h3>
+							<span>Head Mechanic</span>
+							<p>
+								If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
+							</p>
+						</li>
+						<li>
+							<a href="#" class="figure"><img src="images/gregory.jpg" alt=""></a>
+							<h3><a href="#">Gregory C. Farrar</a></h3>
+							<span>Chief Service Advisor</span>
+							<p>
+								Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free!
+							</p>
+						</li>
+					</ul>
+					-->
+				</div>
+			</div>
+
+            <div class="sidebar" id="div_sidebar">
+                <div class="navigation">
+                    <h3>Visita anche</h3>
+                    <ul>
+                        <li>
+                            <a href="about.html">L'Azienda</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Galleria</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Servizi</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contatti</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Chi Siamo</a>
+                        </li>
+                        <li class="selected">
+                            <a href="team.html">La Squadra</a>
+                        </li>
+                    </ul>
+                </div>
+
+				<div class="post">
+					<h3>ultimi post sui social</h3>
+					<ul>
+						<!--
+						<li>
+							<a href="blog.html" class="figure"><img src="" alt=""></a>
+							<div>
+								<span><a href="blog.html">Post 1</a></span>
+								<p>
+									xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ...
+								</p>
+							</div>
+						</li>
+						-->
+					</ul>
+				</div>
+                <div class="gallery" id="div_gallery">
+                    <h3>In evidenza nella galleria</h3>
+                    <p>
+                        Controsoffitto con faretti a incasso
+                    </p>
+                    <a href="gallery.html" class="figure"><img src="images/jobs/featured/20160510_contro2.gif" alt=""></a> <span><a href="gallery.html">Visita la galleria</a></span>
+
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <script>
+
+        $('#div_gallery a').click(function(e){
+            //alert(jQuery(this).attr("id"));
+            e.preventDefault();
+            $('#div_body').load(this.getAttribute('href'));
+        });
+
+        $('#bred a').click(function(e){
+            //alert(jQuery(this).attr("id"));
+            e.preventDefault();
+            $('#div_body').load(this.getAttribute('href'));
+        });
+
+        $('#div_sidebar a').click(function(e){
+            //alert(jQuery(this).attr("id"));
+            e.preventDefault();
+            $('#div_body').load(this.getAttribute('href'));
+        });
+
+    </script>

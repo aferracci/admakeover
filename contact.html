@@ -1,0 +1,111 @@
+	<div id="body">
+		<div class="content">
+
+            <!--
+			<div class="section">
+				<div class="contact">
+					<h2>get in touch with us!</h2>
+					<p>
+						.
+					</p>
+					<form action="index.html">
+						<label for="name"> <span>name</span>
+							<input type="text" name="name" id="name">
+						</label>
+						<label for="email"> <span>email</span>
+							<input type="text" name="email" id="email">
+						</label>
+						<label for="subject"> <span>subject</span>
+							<input type="text" name="subject" id="subject">
+						</label>
+						<label for="message"> <span>comment</span>
+							<textarea name="message" id="message"></textarea>
+						</label>
+						<input type="submit" name="send" id="send" value="">
+					</form>
+				</div>
+			</div>
+			-->
+			<div class="section">
+                <div class="breadcrumb" id="bred">
+                    <span>Sei qui:</span>
+                    <ul>
+                        <li>
+                            <a href="contact.html">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+				<div class="contact">
+                    <h2>Come Contattarci</h2>
+                        <a href="gallery.html"><img src="images/calling.jpg" alt=""></a>
+                        <ul style="float: right">
+                            <li>
+                                <h2>Danilo Lucarelli: +39 3427249059</h2>
+                            </li>
+                            <li>
+                                <h2>Ferracci Adriano: +39 3401429303</h2>
+                            </li>
+                            <li>
+                                <h2>email: admakeover@outlook.com</h2>
+                            </li>
+                        </ul>
+
+				</div>
+			</div>
+            <div class="sidebar" id="div_sidebar">
+                <div class="navigation">
+                    <h3>Visita anche</h3>
+                    <ul>
+                        <li>
+                            <a href="about.html">L'Azienda</a>
+                        </li>
+                        <li>
+                            <a href="team.html">La Squadra</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Galleria</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Servizi</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Chi Siamo</a>
+                        </li>
+                        <li class="selected">
+                            <a href="contact.html">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery" id="div_gallery">
+                    <h3>In evidenza nella galleria</h3>
+                    <p>
+                        Controsoffitto con faretti a incasso
+                    </p>
+                    <a href="gallery.html" class="figure"><img src="images/jobs/featured/20160510_contro2.gif" alt=""></a> <span><a href="gallery.html">Visita la galleria</a></span>
+
+                </div>
+            </div>
+
+        </div>
+	</div>
+	<script>
+
+		$('#div_gallery a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+		$('#bred a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+		$('#div_sidebar a').click(function(e){
+			//alert(jQuery(this).attr("id"));
+			e.preventDefault();
+			$('#div_body').load(this.getAttribute('href'));
+		});
+
+	</script>
